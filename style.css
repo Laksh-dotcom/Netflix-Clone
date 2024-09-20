@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background-image: url("./assets/images/wallpaper.jpg");
+    position: relative;
+    height: 90vh;
+    background-position: center center;
+    background-size: max(2100px, 100vw);
+    background-repeat: no-repeat;
+    bottom:0
+}
+body{
+    background-color: black;
+}
+.main .box{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 100px;
+    opacity: 0.8;
+}
+nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 92vw;
+    position: relative;
+    margin-left: 3%;
+}
+.logo{
+    width:144px;
+    z-index: 12;
+    position: relative;
+    margin-top: 2%;
+}
+.rightside{
+    display: flex;
+    z-index: 10;
+    gap:10px;
+    margin-top: 2%;
+}
+.sign{
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(223, 4, 4);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.sign a{
+    text-decoration: none;
+    color: white;
+    font-family:"poppins", sans-serif;
+    font-weight: 200;
+}
+select{
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+.div1{
+    color: white;
+    font-family: "Poppins",sans-serif;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    height: 80%;
+    top:0;
+    bottom:0;
+    font-size: 52px;
+    font-weight: 900;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 83vh;
+}
+.belowText{
+    font-family: "Poppins",sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    position: relative;
+}
+.readytowatch{
+    position:relative;
+    font-size: 15px;
+    margin-top: 1%;
+    font-weight: 4
+}
+.login{
+    position:relative;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height: 50px;
+    width: 350px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins',"sans-serif";
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 7px;
+    margin-top: 2%;
+    padding-left: 10px;
+    align-items: center;
+}
+.getstarted{
+    margin-top: 2%;
+    height:50px ;
+    width: 200px;
+    background-color: red;
+    color: white;
+    font-family: "Poppins","sans-serif";
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.line {
+    position: absolute; /* Fixed in place */
+    bottom: 0; /* Positioned at the bottom of the screen */
+    width: 100%; /* Full width to cover across the screen */
+    height: 10px; /* Thickness of the line */
+    background-color: rgb(63, 62, 62); /* The color of the line */
+    z-index: 5; /* Ensure it's above other elements */
+}
+.line1{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(63, 62, 62);
+    margin-top: 20px;
+}
+.stSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.textst{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+}
+.stsectext{
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+}
+.stsectext2{
+    color: white;
+    font-size: large;
+}
+.stSec img{
+    height: 300px;
+    position: relative;
+}
+.stSec video{
+    height:150px;
+    position:absolute;
+    right: 5vw;
+    top:10vh
+}
+.second{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second img{
+    position: absolute;
+}
+/* Media queries to adjust for different screen sizes */
+@media (max-width: 768px) {
+    .line {
+        height: 8px; /* Adjust height for smaller screens */
+    }
+    .line1{
+        height: 8px;
+    }
+    .stsectext{
+        font-size: 12px;
+    }
+    .images img{
+        height: 12vh;
+    }
+    .images video{
+        height: 7vh;
+        top: 2vh;
+    }
+    .main{
+        height: 60;
+    }
+    .stsectext2{
+        font-size: 8px;
+   }
+   .stSec{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+   }
+   .login{
+    flex-direction: column;
+   }
+   .second{
+    margin-top: 10vh;
+    font-size: small;
+   }
+   .second .textst{
+    font-size: small;
+    text-align:left;
+   } 
+   .second img{
+    height: 13vh;
+    border: none;
+   }
+}
+
+@media (max-width: 480px) {
+    .line {
+        height: 6px; /* Adjust height for very small screens */
+    }
+    .line1{
+        height: 6px;
+    }
+    .main{
+        background-position: cover;
+    }
+}
